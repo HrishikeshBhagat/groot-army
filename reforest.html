@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/e25b852c87.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="tree.css" />
+    <title>Groot_Army</title>
+  </head>
+
+  <body>
+    <div class="hero_container" id="main">
+      <nav>
+        <div class="logo">
+          <img src="./assets/grootn.svg" alt="" />
+        </div>
+      </nav>
+      <!-- ===========NavbEnd=========== -->
+      <div class="main-container">
+        <div
+          class="tagline"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
+          <h1>He <span></span></h1>
+          <h1>who plants a tree,<span></span></h1>
+          <h1>plants a hope.<span></span></h1>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="page_two">
+        <h1 class="initiative">Groot Army's Initiative</h1>
+        <div class="time_container">
+          <div class="timeline">
+            <ul>
+              <li>
+                <div class="timeline_content">
+                  <h1>Seed Box</h1>
+
+                  <p>
+                    First, make your own SeedBox at home & store all the seeds
+                    from fruits that you will eat during this summer.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="timeline_content">
+                  <h1>Seed Bank</h1>
+                  <p>
+                    We are making a local SeedBank so that you can donate your
+                    seed to us & we'll store it in our SeedBank for upcoming
+                    plantaion Task
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="timeline_content">
+                  <h1>Ropanam | रोपणम</h1>
+                  <p>
+                    Under ROPANAM we are plannig to plant trees on large scale
+                    which includes many subtasks.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="timeline_content">
+                  <h1>Adopt.Plant| वृक्षांगिकार</h1>
+                  <p>
+                    Adopt a plant & take care of it like it's your own, our
+                    initiative is to grow trees which are vital rain water
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="treecount">
+      <ul>
+        <li>
+          <i class="fas fa-tree"></i>
+          <p id="number1" class="number">500</p>
+          <span></span>
+          <p>Trees Planted</p>
+        </li>
+      </ul>
+    </div>
+    <script>
+      var project = setInterval(treesPlanted, 10);
+      let count1 = 1;
+
+      function treesPlanted() {
+        count1++;
+        document.querySelector("#number1").innerHTML = count1;
+        if (count1 == 500) {
+          clearInterval(project);
+        }
+      }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

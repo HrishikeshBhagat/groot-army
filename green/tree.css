@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Roboto+Mono:wght@400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.hero_container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(./leafs/planthand.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: -1;
+}
+
+.logo {
+  font-size: 80px;
+}
+
+.main-container .tagline {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f6f0dc;
+  padding: 1em 0;
+  letter-spacing: 0.02em;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Roboto Mono", sans-serif;
+  text-align: center;
+  justify-content: center;
+  text-shadow: 7px 10px 4px rgba(87, 186, 85, 0.25);
+}
+
+@media screen and (max-width: 1024px) {
+  .main-container .tagline {
+    text-align: center;
+    font-size: 2rem;
+    justify-content: center;
+    padding: 4em 0;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  body {
+  }
+} */
+
+/* ====================page two==== */
+
+.page_two {
+  background-image: url(./leafs/plantglass.jpg);
+  background-size: contain;
+  background-attachment: fixed;
+  border-right: 15px solid rgba(240, 245, 247, 0.692);
+  border-top: 15px solid rgba(240, 245, 247, 0.692);
+}
+
+.initiative {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ffffff;
+  font-style: normal;
+  padding: 1em 0;
+  letter-spacing: 0.02em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  justify-content: center;
+}
+
+.time_container {
+  /* background-image: url(./LEAFS/plantglass.jpg); */
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  /* background-color: #121212; */
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+
+.timeline ul li {
+  padding: 20px;
+  background-color: #1e1f22;
+  color: #ffffff;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+
+.timeline_content h1 {
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.timeline_content p {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+  .timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: cornflowerblue;
+  }
+  .timeline ul li {
+    width: 50%;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-50px);
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+  }
+  .timeline ul li::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    top: 0;
+  }
+  .timeline ul li:nth-child(odd)::after {
+    right: 0;
+    transform: translate(50%, -50%);
+    right: -50px;
+  }
+  .timeline ul li:nth-child(even)::after {
+    right: 0;
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .treecount ul li {
+    width: 35%;
+  }
+}
+
+.treecount ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.treecount ul li {
+  width: 33.33%;
+  height: 100%;
+  padding: 30px 0px;
+  text-align: center;
+  transition: 0.2s linear;
+}
+
+.treecount ul li:hover {
+  transform: scale(1.1);
+}
+
+.treecount ul li:nth-child(1) {
+  background: rgb(16, 31, 46);
+}
+
+.treecount ul li p.number {
+  font-size: 40px;
+  padding: 0;
+  font-weight: bold;
+}
+
+.treecount ul li p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  margin: 0;
+  padding: 10px;
+}
+
+.treecount ul li span {
+  width: 60px;
+  background: rgba(255, 255, 255, 0.8);
+  height: 2px;
+  display: block;
+  margin: 0 auto;
+}
+
+.treecount ul li i {
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 50px;
+  vertical-align: middle;
+}
